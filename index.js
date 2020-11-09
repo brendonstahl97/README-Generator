@@ -87,46 +87,46 @@ async function init() {
 ***
     
 ### Table of Contents
-* [Description](###Description)
-* [Installation](###Installation)
-* [Usage](###Usage)
-* [License](###License)
-* [Contribution](###Contribution)
-* [Tests](###Tests)
-* [Questions](###Questions)
+* [Description](#Description)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contribution](#Contribution)
+* [Tests](#Tests)
+* [Questions](#Questions)
 ---
     
-### Description
+### Description <a name="Description"></a>
 ${description}
     
 ---
     
-### Installation
+### Installation <a name="Installation"></a>
 ${install}
     
 ---
     
-### Usage
+### Usage <a name="Usage"></a>
 ${usage}
     
 ---
     
-### License
+### License <a name="License"></a>
 This project is covered under the ${license} license
 
 ---
     
-### Contribution
+### Contribution <a name="Contribution"></a>
 ${contribution}
     
 ---
     
-### Tests
+### Tests <a name="Tests"></a>
 ${tests}
     
 ---
     
-### Questions
+### Questions <a name="Questions"></a>
 
 [${github}](https://github.com/${github})
 
