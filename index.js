@@ -70,8 +70,6 @@ async function init() {
     // prompt user for README data
     const data = await inquirer.prompt(questions);
 
-   
-
     writeToFile("README.md", generateMarkdown(data));
 }
 

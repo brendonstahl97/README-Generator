@@ -1,7 +1,9 @@
 
-# kjhgfjhgfjh [![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)
+# Readme Generator [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ***
    
+![Example Gif](./Assets/ExampleVid.gif)
+
 ### Table of Contents
 * [Description](#Description)
 * [Installation](#Installation)
@@ -13,39 +15,39 @@
 ---
    
 ### Description <a name="Description"></a>
-jhgfjhfjhgf
+This project generates a readme file
    
 ---
    
 ### Installation <a name="Installation"></a>
-jhgfjhgfjhgf
+to install this project download the files and use the command node index.js in your terminal
    
 ---
    
 ### Usage <a name="Usage"></a>
-jhgfjhgfj
+The project is used to generate a readme for any project using a command line interface
    
 ---
    
 ### License <a name="License"></a>
-This project is covered under the IBM Public license
+This project is covered under the MIT license
 
 ---
    
 ### Contribution <a name="Contribution"></a>
-jhgfjhgfjhgf
+Others can contribute by forking the project and then submiting a pull request for approval
    
 ---
    
 ### Tests <a name="Tests"></a>
-jhgfjhgfj
+There are no tests for this project
    
 ---
    
 ### Questions <a name="Questions"></a>
 
-[jhgfjhgf](https://github.com/jhgfjhgf)
+[brendonstahl97](https://github.com/brendonstahl97)
 
-jhgfjhgfjh
+brendonstahl97@gmail.com
    
 ---
