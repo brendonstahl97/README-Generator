@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 
 // array of questions for user
@@ -67,74 +68,11 @@ function writeToFile(fileName, data) {
 // function to initialize program
 async function init() {
     // prompt user for README data
-    const { title, description, install, usage, license, contribution, tests, github, email } = await inquirer.prompt(questions);
+    const data = await inquirer.prompt(questions);
 
-    // determine which license badge to use for the README
-    let licenseBadge;
-    if (license === "MIT") {
-        licenseBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
-    } else if (license === "GNU GPL v3") {
-        licenseBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
-    } else if (license === "IBM Public") {
-        licenseBadge = "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)";
-    } else {
-        licenseBadge = "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
-    }
+   
 
-    // create README file content using template literals
-    const fileData = `
-# ${title} ${licenseBadge}
-***
-    
-### Table of Contents
-* [Description](#Description)
-* [Installation](#Installation)
-* [Usage](#Usage)
-* [License](#License)
-* [Contribution](#Contribution)
-* [Tests](#Tests)
-* [Questions](#Questions)
----
-    
-### Description <a name="Description"></a>
-${description}
-    
----
-    
-### Installation <a name="Installation"></a>
-${install}
-    
----
-    
-### Usage <a name="Usage"></a>
-${usage}
-    
----
-    
-### License <a name="License"></a>
-This project is covered under the ${license} license
-
----
-    
-### Contribution <a name="Contribution"></a>
-${contribution}
-    
----
-    
-### Tests <a name="Tests"></a>
-${tests}
-    
----
-    
-### Questions <a name="Questions"></a>
-
-[${github}](https://github.com/${github})
-
-${email}
-    
----`;
-
-    writeToFile("README.md", fileData);
+    writeToFile("README.md", generateMarkdown(data));
 }
 
 // function call to initialize program
